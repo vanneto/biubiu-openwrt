@@ -10,7 +10,7 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# 设置默认密码
+# 设置默认IP
 sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
 # 清除登录密码
 sed -i ' s/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g ' openwrt/package/lean/default-settings/files/zzz-default-settings
