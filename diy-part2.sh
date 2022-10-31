@@ -14,3 +14,7 @@
 sed -i 's/192.168.1.1/192.168.123.1/g' package/base-files/files/bin/config_generate
 # 清除登录密码
 sed -i ' s/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g ' openwrt/package/lean/default-settings/files/zzz-default-settings
+#添加额外的软件包
+git clone https://github.com/kenzok8/openwrt-packages.git
+git clone https://github.com/kenzok8/small-package.git
+git clone https://github.com/kenzok8/small.git
