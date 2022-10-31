@@ -18,3 +18,5 @@ sed -i ' s/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g ' openwrt/package/lean/default-
 git clone https://github.com/kenzok8/openwrt-packages.git
 git clone https://github.com/kenzok8/small-package.git
 git clone https://github.com/kenzok8/small.git
+#修改机型默认内核
+sed -i 's/PATCHVER:=5.15/PATCHVER:=6.0/g' target/linux/x86/Makefile
